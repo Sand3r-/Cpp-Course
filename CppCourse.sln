@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.2043
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3. Calculator", "Calculator\Calculator.vcxproj", "{3FA03FFF-C9EC-4492-B49D-B77D1DEC4EAA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4. Normalization", "4. Normalization\4. Normalization.vcxproj", "{508CD2C0-21F8-4C6E-91A4-A5AD6AC9DACB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{3FA03FFF-C9EC-4492-B49D-B77D1DEC4EAA}.Release|x64.Build.0 = Release|x64
 		{3FA03FFF-C9EC-4492-B49D-B77D1DEC4EAA}.Release|x86.ActiveCfg = Release|Win32
 		{3FA03FFF-C9EC-4492-B49D-B77D1DEC4EAA}.Release|x86.Build.0 = Release|Win32
+		{508CD2C0-21F8-4C6E-91A4-A5AD6AC9DACB}.Debug|x64.ActiveCfg = Debug|x64
+		{508CD2C0-21F8-4C6E-91A4-A5AD6AC9DACB}.Debug|x64.Build.0 = Debug|x64
+		{508CD2C0-21F8-4C6E-91A4-A5AD6AC9DACB}.Debug|x86.ActiveCfg = Debug|Win32
+		{508CD2C0-21F8-4C6E-91A4-A5AD6AC9DACB}.Debug|x86.Build.0 = Debug|Win32
+		{508CD2C0-21F8-4C6E-91A4-A5AD6AC9DACB}.Release|x64.ActiveCfg = Release|x64
+		{508CD2C0-21F8-4C6E-91A4-A5AD6AC9DACB}.Release|x64.Build.0 = Release|x64
+		{508CD2C0-21F8-4C6E-91A4-A5AD6AC9DACB}.Release|x86.ActiveCfg = Release|Win32
+		{508CD2C0-21F8-4C6E-91A4-A5AD6AC9DACB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
