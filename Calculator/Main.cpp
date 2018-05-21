@@ -27,12 +27,5 @@
 
 void main()
 {
-    //  ##### Exemplary code. You can delete it
-    double number;          //  Declare variable for number storage.
-    std::cout << "Below you can write whatever number you want!" << std::endl;
-    std::cin >> number;     //  Take number from the user. The program stops here and waits for input.
-    std::cout << "The number of your choice is: " << number << "! Now press ENTER to exit.";
-    std::cin.get();         //  This function "swallows" every ENTER key press.
-    std::cin.get();         //  We put it twice to halt the program. First ENTER has been registered in 'std::cin'.
-    //  #####
+    
 }
