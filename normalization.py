@@ -1,14 +1,15 @@
 import random
 import time
 
-def normalize(data):
+def normalize(data, y):
     x_min = min(data)
     x_max = max(data)
     for i in range(len(data)):
-        data[i] = (data[i] - x_min) / (x_max - x_min)
+        y[i] = (data[i] - x_min) / (x_max - x_min)
 
-size = 2147483
-x = random.sample(range(1, size*2), size)
+size = 6147483
+x = range(1, size)
+y = [None] * size
 start = time.time()
-normalize(x)
+normalize(x, y)
 print(time.time() - start)
