@@ -1,5 +1,4 @@
-import random
-import time
+import random, time, os
 
 def normalize(data, y):
     x_min = min(data)
@@ -13,3 +12,4 @@ y = [None] * size
 start = time.time()
 normalize(x, y)
 print(time.time() - start)
+os.system('pause')
