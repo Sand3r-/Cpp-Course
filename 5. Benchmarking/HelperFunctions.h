@@ -3,8 +3,24 @@
 #include <algorithm>
 #include <iterator>
 #include <iostream>
+#include <iomanip>
 #include <functional>
-#include <chrono>
+
+#include <Windows.h>
+
+inline long long PerformanceCounter()
+{
+    LARGE_INTEGER result;
+    ::QueryPerformanceCounter(&result);
+    return result.QuadPart;
+}
+
+inline long long PerformanceFrequency()
+{
+    LARGE_INTEGER result;
+    ::QueryPerformanceFrequency(&result);
+    return result.QuadPart;
+}
 
 void FillVector(std::vector<float>& data)
 {
@@ -19,12 +35,11 @@ void FillVector(std::vector<float>& data)
 void MeasureTime(std::function<void(std::vector<float>)> function, std::vector<float> vec)
 {
     using namespace std;
-    using namespace chrono;
-    auto now = steady_clock::now();
+    auto cyclesNow = PerformanceCounter();
     function(vec);
-    auto diff = steady_clock::now() - now;
+    auto cyclesDiff = PerformanceCounter() - cyclesNow;
 
-    duration<long long int, nano> ns = duration_cast<duration<long long int, nano>>(diff);
-    cout << ns.count() * powf(10, -9) << " seconds" << endl;
+    auto durationSeconds = cyclesDiff * 1.f / PerformanceFrequency();
+    cout << durationSeconds << " seconds" << endl;
     cin.get();
 }
