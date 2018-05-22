@@ -10,12 +10,12 @@
 * to the user.
 *
 * Required mathematical operations:
-* - addition       '+'
-* - difference     '-'
-* - multiplication '*'
-* - division       '/'
-* - power          '^'     (separate function required)
-* - factorial      '!'     (separate function required)
+* - addition              '+'
+* - difference            '-'
+* - multiplication        '*'
+* - division              '/'
+* - power                 '^'     (separate function required)
+* - binomial coefficient  'b'     (separate function required)
 *
 * HINTS:
 * 1. The mathematical operator may be stored in variable
