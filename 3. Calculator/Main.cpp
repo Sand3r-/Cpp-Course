@@ -12,8 +12,8 @@
 * Required mathematical operations:
 * - addition              '+'
 * - difference            '-'
-* - multiplication        '*'
-* - division              '/'
+* - multiplication        '*'     (optional)
+* - division              '/'     (optional)
 * - power                 '^'     (separate function required)
 * - binomial coefficient  'b'     (separate function required)
 *
